@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    height: 2250px;
+
+    background: rgb(241, 234, 241);
+}
+
+.header{
+    width: 100%;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.603);
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    /* position: relative; */
+}
+
+.logo{
+    width: 110px;
+    height: 55px;
+    margin-left: 150px;
+    float: left;
+}
+
+.list{
+    list-style: none;
+    float: right;
+    margin-right: 700px;
+    margin-top: 15px;
+
+}
+
+.list li {
+    display: inline-block;
+    margin-right: 13px;
+}
+
+.list li a {
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    padding: 7px 10px;
+}
+
+.icons{
+    width: 200px;
+    height: 55px;
+    position: absolute;
+    left: 1500px;
+
+}
+
+.icons-icon{
+    text-align: center;
+    padding-top: 13px;
+    color: white;
+}
+
+.middle-icon{
+    padding: 0px 30px;
+    
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.title{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.title-name{
+    color: black;
+    font-size: 40px;
+}
+
+.line{
+    background-color: black;
+    width: 200px;
+    height: 2px;
+    margin-left: 860px;
+    margin-top: 10px;
+    transition: .3s;
+}
+
+.title:hover .line {
+    transform: scaleX(2);
+}
+/* /////////////////////////////// */
+.products{
+    width: 100%;
+    height: 1500px;
+    /* border: 1px solid red; */
+}
+
+.products-container{
+    /* border: 1px solid red; */
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.item{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 20px;
+}
+
+.item:hover{
+    box-shadow: 1px 1px 10px 1px purple;
+}
+
+.item-img{
+    width: 100%;
+    height: 80%;
+    /* border: 1px solid green; */
+}
+
+.item-img-photo{
+    border-radius: 20px 20px 20px 0px;
+}
+
+.item-info{
+    /* border: 1px solid blue; */
+    width: 70%;
+    height: 20%;
+    background-color: rgb(248, 190, 248);
+    border-radius: 0px 10px 10px 20px;
+}
+
+.item-info-name{
+    color: black;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.item-info-price{
+    color: black;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.item-addtocart{
+    position: absolute;
+    right: 10px;
+    bottom: 25px;
+}
+
+.item-btn{
+    padding: 10px 10px;
+    background-color: purple;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+}
+
+.item-btn:hover{
+    opacity: .7;
+}
+/* /////////////////////////// */
+.cart{
+    width: 100%;
+    height: 400px;
+    /* margin-top: 100px; */
+}
+
+.cart-container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    background-color: rgb(248, 190, 248);
+    position: relative;
+    border-radius: 20px;
+}
+
+.items-added{
+    position: absolute;
+    bottom: 0;
+    height: 75%;
+    width: 50%;
+    background-color: rgb(179, 77, 179);
+    border-radius: 0px 20px 20px 20px;
+}
+
+.items-added-tittle{
+    color: black;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.items-added-price{
+    position: absolute;
+    right: 130px;
+    top: 100px;
+    width: 30%;
+    height: 30%;
+    background-color: rgb(179, 77, 179);
+    border-radius: 20px;
+}
+
+.item-price-title-div{
+    position: absolute;
+    right: 500px;
+    top: 21px;
+}
+
+.items-added-price-title{
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.show-button-div{
+    position: absolute;
+    right: 130px;
+    top: 250px;
+    width: 30%;
+    height: 30%;
+}
+
+.show-btn{
+    margin: 35px 80px;
+    width: 300px;
+    height: 50px;
+
+    background-color: purple;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+}
+
+.show-btn:hover{
+    opacity: .7;
+}
